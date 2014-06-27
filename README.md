@@ -25,20 +25,28 @@ Things you may want to cover:
 
 * How to run the test suite
     - Is using RSpec instead of default unit suite that comes with 
-        
+
     <pre>
-    rails new <app name>
+    $ rails new wishlistapp --skip-test-unit
     </pre>
 
+    <!--- zu klein, no padding um code block
     <code>
     rails new <app name>
-    </code>
+    </code>--->
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+    - Heroku Deployment
+    - http://floating-brook-4112.herokuapp.com/
+    - <pre>$ git push heroku master</pre>
 
-* ...
+
+<pre>
+    git push origin master
+    git push heroku master
+</pre>
 
 
 
