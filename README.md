@@ -62,7 +62,7 @@ Things you may want to cover:
         $ heroku open
     </pre>
 
-
+* Deploy changes 
 <pre>
     $ git push origin master
     $ git push heroku master
