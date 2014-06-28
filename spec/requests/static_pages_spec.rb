@@ -17,6 +17,12 @@ describe "Static pages" do
       		visit '/static_pages/home'
       		expect(page).to have_content('Wishlist App')
     	end
+
+    	it "should have the title 'Home'" do
+    	    visit '/static_pages/home'
+    	    expect(page).to have_title("WishlistApp | Home")
+    	end
+
   	end
 
   	describe "Help page" do
@@ -25,6 +31,12 @@ describe "Static pages" do
       		visit '/static_pages/help'
       		expect(page).to have_content('Help')
     	end
+
+    	it "should have the title 'Help'" do
+    	    visit '/static_pages/help'
+    	    expect(page).to have_title("WishlistApp | Help")
+    	end
+
   	end
 
   	describe "About page" do
@@ -33,6 +45,24 @@ describe "Static pages" do
         	visit '/static_pages/about'
         	expect(page).to have_content('About Us')
       	end
+
+      	it "should have the title 'About Us'" do
+      	    visit '/static_pages/about'
+      	    expect(page).to have_title("WishlistApp | About Us")
+      	end
+   	end
+
+   	describe "Contact" do
+
+   	    it "should have the content 'Contact'" do
+   	    visit '/static_pages/contact'
+   	    expect(page).to have_content('Contact')
+   	    end
+
+   	    it "should have the title 'Contact'" do
+   	        visit '/static_pages/contact'
+   	        expect(page).to have_title("WishlistApp | Contact")
+   	    end
    	end
 
 end
